@@ -1,0 +1,498 @@
+doctype html
+html 
+    head 
+        title OnlineDivorcio-v2
+        meta(name="description" content="This is work!")
+        meta(name="viewport" content="width=375, initial-scale=1")
+        //
+            meta:og 
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap" rel="stylesheet")
+        link(rel="stylesheet" type="text/css" href="libs/slick/slick.css")
+        link(rel="stylesheet" type="text/css" href="css/min.style.css")
+        link(rel="preload" href="img/header-bg.png" as="image")
+    body
+        .wrapper
+            header
+                .mobile--header 
+                    nav 
+                        ul 
+                            li 
+                                a(href="#" title="Cómo funciona") Cómo funciona
+                            li 
+                                a(href="#" title="¿Por Qué Nosotros?") ¿Por Qué Nosotros?
+                            li 
+                                a(href="#" title="Comentarios") Comentarios
+                            li 
+                                a(href="#" title="FAQ") FAQ
+                            li 
+                                a(href="#" title="Contáctenos") Contáctenos
+                            li 
+                                a(href="#" title="Iniciar Sesión") Iniciar Sesión
+                    .mobile--close
+                        svg(width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path(fill-rule='evenodd' clip-rule='evenodd' d='M7.70711 1.70711C8.09764 1.31658 8.09764 0.683417 7.70711 0.292893C7.31659 -0.0976311 6.68342 -0.0976311 6.2929 0.292893L3.9743 2.61149L1.68046 0.481492C1.27574 0.105689 0.643013 0.129124 0.267211 0.533834C-0.108592 0.938545 -0.0851575 1.57128 0.319553 1.94708L2.55912 4.02667L0.292898 6.29289C-0.0976264 6.68342 -0.0976265 7.31658 0.292898 7.70711C0.683422 8.09763 1.31659 8.09763 1.70711 7.70711L4.02571 5.38851L6.31955 7.51851C6.72426 7.89431 7.357 7.87088 7.7328 7.46617C8.1086 7.06146 8.08517 6.42872 7.68046 6.05292L5.44089 3.97333L7.70711 1.70711Z' fill='black') 
+                .base--header
+                    .container.base--menu
+                        .hamburger
+                            img(src="img/icons/burger.svg" alt="Menu")
+                        .logo 
+                            img(src="img/logos/logo.svg" alt="logo")
+                        nav     
+                            ul 
+                                li 
+                                    a(href="#" title="Cómo funciona") Cómo funciona
+                                li 
+                                    a(href="#" title="¿Por Qué Nosotros?") ¿Por Qué Nosotros?
+                                li 
+                                    a(href="#" title="Comentarios") Comentarios
+                                li 
+                                    a(href="#" title="FAQ") FAQ
+                                li 
+                                    a(href="#" title="Contáctenos") Contáctenos
+                            button.btn.nav--btn Empezar 
+                            button.btn.nav--btn__mob Get started
+                            a.base--link(href="#" title="Iniciar Sesión") Iniciar Sesión
+            main
+                section(id="intro")
+                    .container
+                        .section--content
+                            .section--text
+                                h1.section--title Comience Su Divorcio Online Sin Honorarios de Abogados
+                                ul.section--list
+                                    li Comience su divorcio en línea Sin honorarios de abogado
+                                    li Nuestro sistema fue pionero en la industria del divorcio en línea
+                                    li Durante 19 años, más de 500,000 personas han usado nuestras herramientas
+                                    li Ofrecemos el mejor precio del mercado.
+                            .section--decor 
+                        form.intro--form.finder
+                            .finder--header 
+                                .finder--title Vea si califica
+                                .finder--deal 
+                                    .deal--part1 
+                                        .deal--100 100%
+                                        .deal--text DE GARANTÍA DE APROBACIÓN EN EL TRIBUNAL
+                                            span o le devolvemos su dinero
+                                    .deal--part2 
+                                        .deal--price $139
+                                        .deal--desc BEST PRICE
+                            .finder--content 
+                                .finder--radio 
+                                    .radio--group
+                                        .radio--title ¿Sabe la ubicación de su cónyuge?
+                                        .radio--fields 
+                                            input(type="radio" name="location" id="loc-yes" value="loc-yes" checked)
+                                            label(for="loc-yes") Sí
+                                            input(type="radio" name="location" id="loc-no" value="loc-no")
+                                            label(for="loc-no") No 
+                                    .radio--group
+                                        .radio--title Can you and your spouse agree to the division of property, debts and all  child related issues?
+                                        .radio--fields 
+                                            input(type="radio" name="division" id="div-yes" value="div-yes" checked)
+                                            label(for="div-yes") Sí
+                                            input(type="radio" name="division" id="div-no" value="div-no")
+                                            label(for="div-no") No 
+                                .finder--edit
+                                    .finder--inputs 
+                                        select(name="state" required)
+                                            option(disabled selected value="") Seleccione su estado
+                                            option(value="Var1") Var1
+                                            option(value="Var2") Var2
+                                            option(value="Var3") Var3
+                                            option(value="Var4") Var4
+                                        input(type="text" name="name" placeholder="Nombre" required)
+                                        input(type="email" name="email" placeholder="Ingrese su email" required)
+                                        input(type="text" name="surname" placeholder="Apellido" required)
+                                    .finder--submit
+                                        button.btn.finder--btn(type="submit") Verificar elegibilidad
+                                        p.finder--desc Al hacer clic en “Verificar Elegibilidad”, usted acepta los Términos y Condiciones
+                                        p.finder--desc__mob By clicking "Continue" you agree to the Terms & Conditions
+                section(id="instruction")
+                    .container
+                        .section--content
+                            .section--text
+                                h2.section--title Solo cuatro pasos
+                                ul.section--list
+                                    li.instr-1
+                                        .instr--img 
+                                            img(src="img/icons/instr-1.svg")
+                                        .instr--text Compruebe Si Califica
+                                    li.instr-2
+                                        .instr--img 
+                                            img(src="img/icons/instr-2.svg")
+                                        .instr--text Responda Preguntas Detalladas
+                                    li.instr-3
+                                        .instr--img 
+                                            img(src="img/icons/instr-3.svg")
+                                        .instr--text Revise Formularios Completados
+                                    li.instr-4
+                                        .instr--img 
+                                            img(src="img/icons/instr-4.svg")
+                                        .instr--text Llene los Documentos  
+                section(id="advantages")
+                    .container
+                        .section--content
+                            .section--text
+                                h2.section--title Obtenga un divorcio en línea fácil
+                                .section--list
+                                    .list--block
+                                        h3 Barato y conveniente
+                                        p Nuestro proceso simple y económico le permitirá completar sus documentos de divorcio desde la comodidad de su hogar, sin incurrir en el costo de un abogado o lidiar con una larga finalización
+                                    .list--block
+                                        h3 Profesional y con experiencia
+                                        p Somos uno de los principales proveedores de divorcios en línea en los Estados Unidos y Canadá. Hacemos que el divorcio sea fácil porque nuestro proceso garantiza que sus documentos esten hechos correctamente. No hay necesidad de buscar formularios o leer instrucciones largas y confusas
+                                    .list--block
+                                        h3 100% aprobado por el tribunal
+                                        p Sin espera. Nuestro servicio de preparación de divorcios con todo incluido está garantizado para proporcionarle formularios aceptados por el tribunal actualizados y completos
+                        .section--decor 
+                section(id="news")
+                    .container
+                        .section--content
+                            .section--text
+                                h2.section--title Divorcio en línea en las noticias
+                                ul.section--list
+                                    li 
+                                        a(href="#" title="NBC")
+                                            img(src="img/logos/nbc_logo.png" alt="NBC")
+                                    li 
+                                        a(href="#" title="Good Monring America")
+                                            img(src="img/logos/good_morning_logo.png" alt="Good Monring America")
+                                    li 
+                                        a(href="#" title="abc")
+                                            img(src="img/logos/abc_logo.png" alt="abc")
+                                    li 
+                                        a(href="#" title="CBS")
+                                            img(src="img/logos/cbs_logo.png" alt="CBS")
+                                    li 
+                                        a(href="#" title="TIME")
+                                            img(src="img/logos/time_logo.png" alt="TIME")
+                                    li 
+                                        a(href="#" title="USA Today")
+                                            img(src="img/logos/usa_today_logo.png" alt="USA Today")
+                section(id="aboutus")
+                    .container
+                        .section--content
+                            .section--text
+                                h2.section--title ¿Porque nosotros? Revise la diferencia de OnlineDivorce.com
+                            .section--blocks
+                                .section--block
+                                    article.section--article
+                                        header
+                                            h3.section--title Divorcio disputado
+                                            p.section--desc Los precios promedio comienzan a partir de $2000 dólares
+                                        main
+                                            p.section--p Proceso fuera de línea e inconveniente con representación de abogado para cada cónyuge. Costos de honorarios de abogados que resultan en gastos impredecibles. En general, un camino largo y costoso a seguir.
+                                            ul.section--list
+                                                li La disponibilidad del abogado afecta el tiempo de finalización
+                                                li Cada cónyuge tiene que contratar a un abogado, que duplica automáticamente los honorarios legales
+                                                li Posibles batallas judiciales que se suman a los altos niveles de estrés
+                                    article.section--article
+                                        header
+                                            h3.section--title Otros servicios de divorcio en línea 
+                                            p.section--desc Los precios promedio comienzan a partir de $300 dólares
+                                        main
+                                            p.section--p Otros sitios web para completar los documentos de divorcio utilizan tecnologías de software defectuosas para completar su documentación de divorcio.
+                                            ul.section--list
+                                                li Preparación automatizada de documentos
+                                                li El tiempo de procesamiento varía, pero puede demorar más de tres días hábiles
+                                                li Atención al cliente a pedido, la calidad varía
+                                                li Una tarifa fija reclamada, sin embargo, muchos sitios tienen tarifas ocultas
+                                                li Sin experiencia: muchos sitios comenzaron a funcionar hace solo unos años
+                                .section--block.deal
+                                        article
+                                            .deal--wrapper
+                                                header 
+                                                    .logo 
+                                                        img(src="./img/logos/logo-white.svg" alt="logo")
+                                                    .deal--title La principal herramienta de divorcio disputado
+                                                main 
+                                                    p.deal--p Proceso totalmente guiado, rápido y económico. Servicio de divorcio en línea experimentado y confiable que utiliza tecnología de primer nivel
+                                                    ul.deal--list
+                                                        li Los documentos de divorcio listos para presentar pueden completarse a su propio ritmo con fácil acceso para ambos cónyuges
+                                                        li Atención al cliente galardonado Una tarifa fija (para ambos cónyuges) para acceder a todos los documentos completados para la presentación
+                                                        li Revisiones gratuitas y cambio de nombre gratuito, sin tarifas ocultas
+                                                        li Instrucciones detalladas de presentación específicas del estado
+                                                        li Revise todo y realice cambios desde la comodidad de su hogar
+                                                    button.btn.deal--btn.finder--btn Comience ahora por solo $139 dólares
+                                                    button.btn.deal--btn.finder--btn__mob Start now for just 139$
+                                            footer 
+                                                ul.logos--list 
+                                                    li 
+                                                        img(src="./img/logos/trust_logo.png" alt="TRUST")
+                                                    li 
+                                                        img(src="./img/logos/norton_logo.png" alt="Norton")
+                                                    li 
+                                                        img(src="./img/logos/mcafee_logo.png" alt="McAfee")
+                                                    li 
+                                                        img(src="./img/logos/godaddy_logo.png" alt="GoDaddy")
+                section(id="experience")
+                    .container
+                        .section--content
+                            .section--text
+                                h2.section--title Compromiso con los clientes
+                                p.section--desc Nuestras herramientas han ayudado a más de 500,000 personas a divorciarse rápidamente y sin estrés mientras ahorran dinero en el proceso.
+                                h2.section--title__mob Our commitment to our customers
+                                dl.section--list
+                                    .dl--block
+                                        .dl--img
+                                            img(src="img/icons/police.svg" alt="Aprobación judicial garantizada")
+                                        .dl--item
+                                            dt Aprobación judicial garantizada
+                                                dd Si los formularios no son aprobados por el tribunal, reembolsaremos el dinero del cliente
+                                        .dl--item__mob 
+                                            dt Court approval guaranteed 
+                                                dd If your forms aren’t approved with the court we will refund your money
+                                    .dl--block
+                                        .dl--img
+                                            img(src="img/icons/judge.svg" alt="Responda Preguntas Detalladas")
+                                        .dl--item
+                                            dt Responda Preguntas Detalladas
+                                                dd Nuestras herramientas han ayudado a completar más de 500,000 casos
+                                        .dl--item__mob 
+                                            dt The known leader in low cost divorce
+                                                dd Over 17 years experience, over 500,000 cases completed
+                                    .dl--block
+                                        .dl--img
+                                            img(src="img/icons/columns.svg" alt="Rellenado de instruccionespaso a paso")
+                                        .dl--item
+                                            dt Rellenado de instruccionespaso a paso
+                                                dd Nuestras instrucciones de presentación fáciles de seguir guían al cliente a través del proceso
+                                        .dl--item__mob 
+                                            dt Step by step filling  instructions
+                                                dd Our easy-to follow filing istructions will walk you through the process 
+                                    .dl--block
+                                        .dl--img
+                                            img(src="img/icons/sword.svg" alt="Ahorre dineroa")
+                                        .dl--item
+                                            dt Ahorre dinero
+                                                dd Los clientes ahorran al menos $1,700 dólares en honorarios de abogados
+                                        .dl--item__mob 
+                                            dt Save your money
+                                                dd Save at least $1,700 compared to using lawyer services
+                                    .dl--block
+                                        .dl--img
+                                            img(src="img/icons/court.svg" alt="Atención al cliente en línea")
+                                        .dl--item
+                                            dt Atención al cliente en línea
+                                                dd Nuestro dedicado equipo de atención al cliente brinda instrucciones durante todo el proceso
+                                        .dl--item__mob 
+                                            dt Online customer support
+                                                dd We will answer all of the questions you or your spouse may have
+                                    .dl--block
+                                        .dl--img
+                                            img(src="img/icons/hand.svg" alt="Disponible en cualquier dispositivo")
+                                        .dl--item
+                                            dt Use our service on any device
+                                                dd Si los formularios no son aprobados por el tribunal, reembolsaremos el dinero del cliente
+                                        .dl--item__mob 
+                                            dt Court approval guaranteed 
+                                                dd Doing divorce papers online has never been so convenient
+                section(id="reviews")
+                    .container
+                        .section--content
+                            .section--text
+                                h2.section--title Opiniones de OnlineDivorce
+                                .reviews--slider 
+                                    article.review-block 
+                                        header
+                                            .review--avatar 
+                                                img(src="img/samples/avatar.jpg" alt="Kilpatrick B., Ontario")
+                                            .review--block
+                                                .review--name Kilpatrick B., Ontario
+                                                .review--rating
+                                                    img(src="img/icons/star.svg" alt="rating")
+                                                    img(src="img/icons/star.svg" alt="rating")
+                                                    img(src="img/icons/star.svg" alt="rating")
+                                                    img(src="img/icons/star.svg" alt="rating")
+                                                    img(src="img/icons/star.svg" alt="rating")
+                                            .review--date Aug 2018 
+                                        main 
+                                            p.review--text OD proporciona una guía clara, incluso para mi inusual y bastante especifico caso, resultó ser muy útil. Pensarías que no puedes esperar recibir soporte online profesional. Pero OD sorprende. Todos los formularios estuvieron preparados a tiempo. ¡Lo recomiendo!
+                                        footer
+                                            .review--date Aug 2018  
+                                            .review--author 
+                                                span Verified Buyer
+                                    article.review-block 
+                                        header
+                                            .review--avatar 
+                                                img(src="img/samples/avatar.jpg" alt="Kilpatrick B., Ontario")
+                                            .review--block
+                                                .review--name Kilpatrick B., Ontario
+                                                .review--rating
+                                                    img(src="img/icons/star.svg" alt="rating")
+                                                    img(src="img/icons/star.svg" alt="rating")
+                                                    img(src="img/icons/star.svg" alt="rating")
+                                                    img(src="img/icons/star.svg" alt="rating")
+                                                    img(src="img/icons/star.svg" alt="rating")
+                                            .review--date Aug 2019 
+                                        main 
+                                            p.review--text OD proporciona una guía clara, incluso para mi inusual y bastante especifico caso, resultó ser muy útil. Pensarías que no puedes esperar recibir soporte online profesional. Pero OD sorprende. Todos los formularios estuvieron preparados a tiempo. ¡Lo recomiendo!
+                                        footer
+                                            .review--date Aug 2019  
+                                            .review--author 
+                                                span Verified Buyer
+                                    article.review-block 
+                                        header
+                                            .review--avatar 
+                                                img(src="img/samples/avatar.jpg" alt="Kilpatrick B., Ontario")
+                                            .review--block
+                                                .review--name Kilpatrick B., Ontario
+                                                .review--rating
+                                                    img(src="img/icons/star.svg" alt="rating")
+                                                    img(src="img/icons/star.svg" alt="rating")
+                                                    img(src="img/icons/star.svg" alt="rating")
+                                                    img(src="img/icons/star.svg" alt="rating")
+                                                    img(src="img/icons/star.svg" alt="rating")
+                                            .review--date Aug 2020
+                                        main 
+                                            p.review--text OD proporciona una guía clara, incluso para mi inusual y bastante especifico caso, resultó ser muy útil. Pensarías que no puedes esperar recibir soporte online profesional. Pero OD sorprende. Todos los formularios estuvieron preparados a tiempo. ¡Lo recomiendo!
+                                        footer
+                                            .review--date Aug 2020  
+                                            .review--author 
+                                                span Verified Buyer
+                                .reviews--more
+                                    a(href="#") Ver todas las opiniones de los clientes
+            footer.main--footer
+                .container
+                    .footer--header.base--menu
+                        .logo 
+                            img(src="img/logos/logo-white.svg" alt="logo")
+                        nav     
+                            ul 
+                                li 
+                                    a(href="#" title="Cómo funciona") Cómo funciona
+                                li 
+                                    a(href="#" title="¿Por Qué Nosotros?") ¿Por Qué Nosotros?
+                                li 
+                                    a(href="#" title="Comentarios") Comentarios
+                                li 
+                                    a(href="#" title="FAQ") FAQ
+                                li 
+                                    a(href="#" title="Contáctenos") Contáctenos
+                            button.btn.nav--btn Empezar 
+                            a.base--link(href="#" title="Iniciar Sesión") Iniciar Sesión
+                    .footer--content
+                        .contacts 
+                            ul.contacts--list 
+                                li.address 
+                                    b Document Processing Center Address: 
+                                    span Online Divorce Technology LLC 
+                                    div 416 W San Ysidro BLVD, Ste L  PMB #630,  San Ysidro CA 92173
+                                li.phone 
+                                    b 1 (866) 927-1400 
+                                    div Mon-Fri, 9:00AM - 8:00PM EST
+                        .links 
+                            ul.links--list 
+                                li 
+                                    a(href="#" titlle="Divorce in Alabama") Divorce in Alabama
+                                li 
+                                    a(href="#" titlle="Divorce in Alaska") Divorce in Alaska
+                                li 
+                                    a(href="#" titlle="Divorce in Arizona") Divorce in Arizona
+                                li 
+                                    a(href="#" titlle="Divorce in Arkansas") Divorce in Arkansas
+                                li 
+                                    a(href="#" titlle="Divorce in California") Divorce in California
+                                li 
+                                    a(href="#" titlle="Divorce in Colorado") Divorce in Colorado
+                                li 
+                                    a(href="#" titlle="Divorce in Connecticut") Divorce in Connecticut
+                                li 
+                                    a(href="#" titlle="Divorce in Delaware") Divorce in Delaware
+                                li 
+                                    a(href="#" titlle="Divorce in Florida") Divorce in Florida
+                                li 
+                                    a(href="#" titlle="Divorce in Georgia") Divorce in Georgia
+                                li 
+                                    a(href="#" titlle="Divorce in Hawaii") Divorce in Hawaii
+                                li 
+                                    a(href="#" titlle="Divorce in Idaho") Divorce in Idaho 
+                                li 
+                                    a(href="#" titlle="Divorce in Illinois") Divorce in Illinois
+                                li 
+                                    a(href="#" titlle="Divorce in Indiana") Divorce in Indiana 
+                                li 
+                                    a(href="#" titlle="Divorce in Iowa") Divorce in Iowa 
+                                li 
+                                    a(href="#" titlle="Divorce in Kansas") Divorce in Kansas
+                                li 
+                                    a(href="#" titlle="Divorce in Kentucky") Divorce in Kentucky 
+                                li 
+                                    a(href="#" titlle="Divorce in Louisiana") Divorce in Louisiana 
+                                li 
+                                    a(href="#" titlle="Divorce in Maine") Divorce in Maine  
+                                li 
+                                    a(href="#" titlle="Divorce in Maryland") Divorce in Maryland 
+                                li 
+                                    a(href="#" titlle="Divorce in Massachusetts") Divorce in Massachusetts 
+                                li 
+                                    a(href="#" titlle="Divorce in Michigan") Divorce in Michigan 
+                                li 
+                                    a(href="#" titlle="Divorce in Minnesota") Divorce in Minnesota 
+                                li 
+                                    a(href="#" titlle="Divorce in Mississippi") Divorce in Mississippi 
+                                li 
+                                    a(href="#" titlle="Divorce in Missouri") Divorce in Missouri 
+                                li 
+                                    a(href="#" titlle="Divorce in Montana") Divorce in Montana 
+                                li 
+                                    a(href="#" titlle="Divorce in Nebraska") Divorce in Nebraska 
+                                li 
+                                    a(href="#" titlle="Divorce in Nevada") Divorce in Nevada 
+                                li 
+                                    a(href="#" titlle="Divorce in New Hampshire") Divorce in New Hampshire
+                                li 
+                                    a(href="#" titlle="Divorce in New Jersey") Divorce in New Jersey
+                                li 
+                                    a(href="#" titlle="Divorce in New Mexico") Divorce in New Mexico
+                                li 
+                                    a(href="#" titlle="Divorce in New York") Divorce in New York
+                                li 
+                                    a(href="#" titlle="Divorce in North Carolin") Divorce in North Carolina
+                                li 
+                                    a(href="#" titlle="Divorce in North Dakota") Divorce in North Dakota
+                                li 
+                                    a(href="#" titlle="Divorce in Ohio") Divorce in Ohio
+                                li 
+                                    a(href="#" titlle="Divorce in Oklahoma") Divorce in Oklahoma
+                                li 
+                                    a(href="#" titlle="Divorce in Oregon") Divorce in Oregon
+                                li 
+                                    a(href="#" titlle="Divorce in Pennsylvania") Divorce in Pennsylvania
+                                li 
+                                    a(href="#" titlle="Divorce in Puerto Rico") Divorce in Puerto Rico
+                                li 
+                                    a(href="#" titlle="Divorce in Rhode Island") Divorce in Rhode Island
+                                li 
+                                    a(href="#" titlle="Divorce in South Carolina") Divorce in South Carolina
+                                li 
+                                    a(href="#" titlle="Divorce in South Dakota") Divorce in South Dakota
+                                li 
+                                    a(href="#" titlle="Divorce in Tennessee") Divorce in Tennessee
+                                li 
+                                    a(href="#" titlle="Divorce in Texas") Divorce in Texas
+                                li 
+                                    a(href="#" titlle="Divorce in Utah") Divorce in Utah
+                                li 
+                                    a(href="#" titlle="Divorce in Vermont") Divorce in Vermont
+                                li 
+                                    a(href="#" titlle="Divorce in Virginia") Divorce in Virginia
+                                li 
+                                    a(href="#" titlle="Divorce in Washington") Divorce in Washington
+                                li 
+                                    a(href="#" titlle="Divorce in Washington D.C.") Divorce in Washington D.C.
+                                li 
+                                    a(href="#" titlle="Divorce in Virginia") Divorce in West Virginia
+                                li 
+                                    a(href="#" titlle="Divorce in Wisconsin") Divorce in Wisconsin
+                                li 
+                                    a(href="#" titlle="Divorce in Wyoming") Divorce in Wyoming
+                    .footer--bottom
+                        a(href="#") Mapa del sitio
+                        .footer--copyright © 2000-#[span#copyyear 2019] Online Divorcio, Todos los derechos reservados
+                        .footer--legal Aviso legal: Divorcio en línea no es un bufete de abogados y su sservicios de la página web y los formularios no sustituyen el asesoramiento de un abogado. Divorcio en línea proporciona acceso a servicios de autoayuda asistidos por computadora en su dirección específica. La página web del Divorcio en línea y las instrucciones escritas brindan información general sobre el proceso de divorcio solamente; No podemos darle ningún consejo específico, opiniones o recomendaciones sobre su selección o relleno de formularios o sus derechos, recursos u opciones legales particulares. OnlineDivorce.com es un sitio web que proporciona acceso a cuestionarios en línea autoguiados. El Divorcio en línea no vende formularios en blanco, y un usuario puede descargarlos en el sitio web de un tribunal. Las comunicaciones entre Usted y Divorcio en línea se rigen por nuestra Política de privacidad, pero no están cubiertas por los privilegios de abogado-cliente o producto de trabajo. Su acceso al sitio web de Divorcio en línea está sujeto y regido por nuestros Términos de uso. Cualquier compra de Divorcio en línea está sujeta y regida por nuestros Términos y condiciones.
+            .overlay
+        script(type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js")
+        script(type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+        script(type="text/javascript" src="libs/slick/slick.min.js")
+        script(src="js/main.js") 
